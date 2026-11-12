@@ -4,5 +4,6 @@ Free, browser-only bid and quote calculators. The pages in this branch are gener
 
 - Commercial Cleaning Bid Calculator: `commercial-cleaning-bid-calculator/`
 - Window Cleaning Price Calculator: `window-cleaning-price-calculator/`
+- Pressure Washing Price Calculator: `pressure-washing-price-calculator/`
 
 Default numbers are examples, not industry standards.

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Pressure Washing Price Calculator (Quote by Square Foot)</title>
+<meta name="description" content="Free pressure washing price calculator. Enter square footage by surface, your labor cost and profit margin to get a job price, price per square foot and revenue per hour.">
+<link rel="canonical" href="https://atanesiand-stack.github.io/tools/pressure-washing-price-calculator/">
+<meta property="og:title" content="Free Pressure Washing Price Calculator (Quote by Square Foot)">
+<meta property="og:description" content="Free pressure washing price calculator. Enter square footage by surface, your labor cost and profit margin to get a job price, price per square foot and revenue per hour.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://atanesiand-stack.github.io/tools/pressure-washing-price-calculator/">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Pressure Washing Price Calculator", "url": "https://atanesiand-stack.github.io/tools/pressure-washing-price-calculator/", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "description": "Free pressure washing price calculator. Enter square footage by surface, your labor cost and profit margin to get a job price, price per square foot and revenue per hour.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this calculator free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It runs in your browser, there is no sign-up, and the numbers you enter are not sent anywhere."}}, {"@type": "Question", "name": "Should I charge per square foot or per hour?", "acceptedAnswer": {"@type": "Answer", "text": "Customers usually want a fixed price, so quote a fixed price. Use time to work out what that fixed price needs to be."}}, {"@type": "Question", "name": "What is a minimum job charge?", "acceptedAnswer": {"@type": "Answer", "text": "It is the lowest price you accept for showing up. Small jobs still cost you travel and setup time, so the calculator never returns less than your minimum."}}, {"@type": "Question", "name": "Does it include sealing or stain treatment?", "acceptedAnswer": {"@type": "Answer", "text": "No. Those are usually flat-priced extras. The paid Excel workbook has an add-ons table for them."}}]}]</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a href="../">Pricing Calculators for Service Businesses</a><nav aria-label="Calculators"><a href="../commercial-cleaning-bid-calculator/">Commercial cleaning bid</a><a href="../pressure-washing-price-calculator/">Pressure washing price</a><a href="../window-cleaning-price-calculator/">Window cleaning price</a></nav></div></header>
+<div class="hero"><div class="wrap"><h1>Pressure Washing Price Calculator</h1><p>Turn square footage into a job price using your real labor cost and the profit margin you need. Free, no sign-up, nothing leaves your browser.</p></div></div>
+<main><div class="wrap">
+<form class="grid" novalidate>
+<div>
+<section class="card" aria-labelledby="h-costs"><h2 id="h-costs">1. Your costs</h2><div class="fields"><div><label for="wage">Hourly wage you pay ($)</label><input id="wage" type="number" min="0" step="0.5" inputmode="decimal" value="22"></div><div><label for="burden">Payroll burden (% of wages)</label><input id="burden" type="number" min="0" step="1" inputmode="decimal" value="15"></div><div><label for="supplies">Supplies and equipment (% of wages)</label><input id="supplies" type="number" min="0" step="1" inputmode="decimal" value="12"></div><div><label for="overhead">Overhead (% of direct cost)</label><input id="overhead" type="number" min="0" step="1" inputmode="decimal" value="15"></div><div><label for="margin">Profit margin (% of price)</label><input id="margin" type="number" min="0" step="1" inputmode="decimal" value="35"></div><div><label for="minimum">Minimum charge per job ($)</label><input id="minimum" type="number" min="0" step="5" inputmode="decimal" value="175"></div><div><label for="travel">Travel and setup per job (hours)</label><input id="travel" type="number" min="0" step="0.05" inputmode="decimal" value="1"></div><div><label for="visits">Visits per year</label><input id="visits" type="number" min="0" step="1" inputmode="decimal" value="1"></div></div></section>
+<section class="card" style="margin-top:20px" aria-labelledby="h-lines"><h2 id="h-lines">2. The job</h2>
+<div class="tablewrap"><table><thead><tr><th>Item type</th><th>Sq ft</th><th>Sq ft per hour</th><th>Difficulty</th><th class="num">Hours</th><th></th></tr></thead><tbody id="lines"></tbody></table></div>
+<p><button type="button" id="add-line">Add a line</button></p>
+<p class="note">The rates are examples, not an industry standard. Replace them with timings from your own jobs.</p></section>
+</div>
+<aside class="card results" aria-live="polite" aria-labelledby="h-result"><h2 id="h-result">Your price</h2>
+<div class="price"><span>Price per job</span><strong id="r-price">$0</strong></div>
+<p class="note" id="r-min" hidden>Your minimum charge applies to this job.</p>
+<dl>
+<dt>Labor hours</dt><dd id="r-hours">0</dd>
+<dt>Break-even cost</dt><dd id="r-breakeven">$0</dd>
+<dt>Profit</dt><dd id="r-profit">$0</dd>
+<dt>Price per sq ft</dt><dd id="r-unit">-</dd>
+<dt>Revenue per labor hour</dt><dd id="r-hour">-</dd>
+<dt>Average per month</dt><dd id="r-month">$0</dd>
+<dt>Per year</dt><dd id="r-year">$0</dd>
+</dl>
+<p class="note">Price is rounded to the nearest $5. Example numbers until you enter your own.</p>
+</aside>
+</form>
+<section class="cta" aria-labelledby="h-cta"><h2 id="h-cta">Want the full version? Pressure Washing Pricing Calculator (Excel), $19</h2>
+<p>The Excel workbook adds flat-priced add-ons such as stain treatment and gutter brightening, a side-by-side comparison of five profit margins, and a one-page proposal that fills itself in and prints as a PDF.</p><a class="btn" href="https://atanesian.gumroad.com/l/pressure-washing-pricing-calculator">See the Excel workbook on Gumroad</a></section>
+<div class="prose">
+<h2>How to price a pressure washing job</h2>
+<p>A single price per square foot is easy to quote, but a driveway, a second-story wall and an oil-stained patio do not take the same time per foot. Pricing from time keeps those differences visible. Measure each surface, divide by how many square feet you clean per hour on that kind of surface, and let your costs and margin set the price.</p>
+<ol><li>Measure each surface separately: driveway, walkways, patio, siding, deck, fence, roof.</li><li>Divide the square feet by your square feet per hour for that surface.</li><li>Mark anything slower than normal: heavy staining, second-story work, limited water or access.</li><li>Add travel, setup and pack-out time. On a small job it can be the biggest line.</li><li>Turn hours into cost: wages, payroll burden, chemicals and fuel, overhead.</li><li>Divide the cost by one minus your profit margin, and never go below your minimum job charge.</li></ol>
+<h2>Which numbers should you use?</h2>
+<p>The square feet per hour in this calculator are examples so you can see it working. They are not an industry standard. Your machine, your surface cleaner and your water supply decide your real speed. Time two or three jobs, divide the square feet by the hours, and type your own numbers into the rate column.</p>
+<h2>What the result tells you</h2>
+<ul><li>Break-even cost is what the job costs you with no profit.</li><li>Job price is the break-even cost plus your margin, rounded to the nearest $5, and never below your minimum.</li><li>Price per sq ft lets you compare your time-based price with a per-foot price list.</li><li>Revenue per labor hour shows whether the job is worth loading the trailer.</li></ul>
+<h2>Questions</h2>
+<h3>Is this calculator free?</h3><p>Yes. It runs in your browser, there is no sign-up, and the numbers you enter are not sent anywhere.</p><h3>Should I charge per square foot or per hour?</h3><p>Customers usually want a fixed price, so quote a fixed price. Use time to work out what that fixed price needs to be.</p><h3>What is a minimum job charge?</h3><p>It is the lowest price you accept for showing up. Small jobs still cost you travel and setup time, so the calculator never returns less than your minimum.</p><h3>Does it include sealing or stain treatment?</h3><p>No. Those are usually flat-priced extras. The paid Excel workbook has an add-ons table for them.</p>
+</div>
+</div></main>
+<script type="application/json" id="calc-config">{"rate_mode": "units_per_hour", "qty_label": "Sq ft", "rate_label": "Sq ft per hour", "item_types": [["Concrete driveway - surface cleaner", 1000], ["Sidewalk or walkway", 800], ["Patio or pool deck", 700], ["House siding - soft wash", 900], ["Wood deck - wash only", 400], ["Wood fence - one side", 500], ["Roof - soft wash", 600], ["Brick or pavers", 500], ["Parking lot or commercial flatwork", 1500]], "difficulty": [["Normal", 1.0], ["Heavy staining or oil", 1.3], ["Second story", 1.25], ["Limited water or access", 1.2], ["Post-construction", 1.5]], "example_lines": [[0, 1200, 0], [1, 250, 0], [2, 400, 1], [3, 2200, 0], [5, 600, 0]]}</script>
+<script src="../app.js"></script>
+<footer><div class="wrap">
+<p>Free calculators for small service businesses. The default numbers are examples, not industry standards, and nothing here is accounting, tax or legal advice.</p>
+<p>Full Excel versions are sold at <a href="https://atanesian.gumroad.com">atanesian.gumroad.com</a>. These tools were built with the help of AI.</p>
+</div></footer>
+</body>
+</html>
