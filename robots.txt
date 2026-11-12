@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atanesiand-stack.github.io/tools/sitemap.xml

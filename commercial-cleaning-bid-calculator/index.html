@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Commercial Cleaning Bid Calculator (Price per Visit and per Month)</title>
+<meta name="description" content="Free commercial cleaning bid calculator. Enter square footage by area, your labor cost, overhead and profit margin to get a price per visit, per month and per square foot.">
+<link rel="canonical" href="https://atanesiand-stack.github.io/tools/commercial-cleaning-bid-calculator/">
+<meta property="og:title" content="Free Commercial Cleaning Bid Calculator (Price per Visit and per Month)">
+<meta property="og:description" content="Free commercial cleaning bid calculator. Enter square footage by area, your labor cost, overhead and profit margin to get a price per visit, per month and per square foot.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://atanesiand-stack.github.io/tools/commercial-cleaning-bid-calculator/">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Commercial Cleaning Bid Calculator", "url": "https://atanesiand-stack.github.io/tools/commercial-cleaning-bid-calculator/", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "description": "Free commercial cleaning bid calculator. Enter square footage by area, your labor cost, overhead and profit margin to get a price per visit, per month and per square foot.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this calculator free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It runs in your browser, there is no sign-up, and the numbers you enter are not sent anywhere."}}, {"@type": "Question", "name": "How many visits per year should I enter?", "acceptedAnswer": {"@type": "Answer", "text": "Five visits a week is about 260 a year, three is about 156, and once a week is 52. Enter 1 for a one-time job."}}, {"@type": "Question", "name": "Does it include floor care or carpet cleaning?", "acceptedAnswer": {"@type": "Answer", "text": "No. This page prices recurring cleaning visits. Periodic services are usually quoted separately; the paid Excel workbook has a section for them."}}, {"@type": "Question", "name": "Can the price be guaranteed to win the bid?", "acceptedAnswer": {"@type": "Answer", "text": "No. The calculator shows what the job costs you and what price gives you the margin you asked for. Whether that price wins depends on your market and your competitors."}}]}]</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a href="../">Pricing Calculators for Service Businesses</a><nav aria-label="Calculators"><a href="../commercial-cleaning-bid-calculator/">Commercial cleaning bid</a><a href="../window-cleaning-price-calculator/">Window cleaning price</a></nav></div></header>
+<div class="hero"><div class="wrap"><h1>Commercial Cleaning Bid Calculator</h1><p>Build a janitorial bid from square footage, your real labor cost, and the profit margin you need. Free, no sign-up, nothing leaves your browser.</p></div></div>
+<main><div class="wrap">
+<form class="grid" novalidate>
+<div>
+<section class="card" aria-labelledby="h-costs"><h2 id="h-costs">1. Your costs</h2><div class="fields"><div><label for="wage">Hourly wage you pay ($)</label><input id="wage" type="number" min="0" step="0.5" inputmode="decimal" value="17"></div><div><label for="burden">Payroll burden (% of wages)</label><input id="burden" type="number" min="0" step="1" inputmode="decimal" value="15"></div><div><label for="supplies">Supplies and equipment (% of wages)</label><input id="supplies" type="number" min="0" step="1" inputmode="decimal" value="6"></div><div><label for="overhead">Overhead (% of direct cost)</label><input id="overhead" type="number" min="0" step="1" inputmode="decimal" value="15"></div><div><label for="margin">Profit margin (% of price)</label><input id="margin" type="number" min="0" step="1" inputmode="decimal" value="20"></div><div><label for="minimum">Minimum charge per visit ($)</label><input id="minimum" type="number" min="0" step="5" inputmode="decimal" value="40"></div><div><label for="travel">Travel and setup per visit (hours)</label><input id="travel" type="number" min="0" step="0.05" inputmode="decimal" value="0.25"></div><div><label for="visits">Visits per year</label><input id="visits" type="number" min="0" step="1" inputmode="decimal" value="260"></div></div></section>
+<section class="card" style="margin-top:20px" aria-labelledby="h-lines"><h2 id="h-lines">2. The job</h2>
+<div class="tablewrap"><table><thead><tr><th>Item type</th><th>Sq ft</th><th>Sq ft per hour</th><th>Difficulty</th><th class="num">Hours</th><th></th></tr></thead><tbody id="lines"></tbody></table></div>
+<p><button type="button" id="add-line">Add a line</button></p>
+<p class="note">The rates are examples, not an industry standard. Replace them with timings from your own jobs.</p></section>
+</div>
+<aside class="card results" aria-live="polite" aria-labelledby="h-result"><h2 id="h-result">Your price</h2>
+<div class="price"><span>Price per visit</span><strong id="r-price">$0</strong></div>
+<p class="note" id="r-min" hidden>Your minimum charge applies to this visit.</p>
+<dl>
+<dt>Labor hours</dt><dd id="r-hours">0</dd>
+<dt>Break-even cost</dt><dd id="r-breakeven">$0</dd>
+<dt>Profit</dt><dd id="r-profit">$0</dd>
+<dt>Price per sq ft</dt><dd id="r-unit">-</dd>
+<dt>Revenue per labor hour</dt><dd id="r-hour">-</dd>
+<dt>Average per month</dt><dd id="r-month">$0</dd>
+<dt>Per year</dt><dd id="r-year">$0</dd>
+</dl>
+<p class="note">Price is rounded to the nearest $5. Example numbers until you enter your own.</p>
+</aside>
+</form>
+<section class="cta" aria-labelledby="h-cta"><h2 id="h-cta">Want the full version? Commercial Cleaning Bid Calculator (Excel), $27</h2>
+<p>The Excel workbook adds what a real bid needs: periodic services such as carpet extraction and floor care, a side-by-side comparison of five profit margins, and a one-page proposal that fills itself in and prints as a PDF.</p><a class="btn" href="https://atanesian.gumroad.com/l/commercial-cleaning-bid-calculator">See the Excel workbook on Gumroad</a></section>
+<div class="prose">
+<h2>How to price a commercial cleaning contract</h2>
+<p>Most underpriced cleaning bids start from a price per square foot copied from somewhere else. A safer bid starts from your own labor hours, because labor is most of your cost and two buildings with the same square footage can take very different amounts of time. A floor that is mostly restrooms and break rooms is slower to clean than one that is open office.</p>
+<ol><li>Split the building into areas and measure the cleanable square footage of each one.</li><li>Estimate the hours per visit: square feet divided by how many square feet one person cleans per hour in that kind of area.</li><li>Add paid time that is not cleaning: travel, unlocking, setup, and putting equipment away.</li><li>Turn hours into cost: wages, then payroll burden, then supplies, then overhead.</li><li>Divide the cost by one minus your profit margin. A 20% margin on a $140 cost is $175, not $168.</li><li>Multiply the price per visit by the number of visits per year and divide by 12 for the monthly price.</li></ol>
+<h2>Which numbers should you use?</h2>
+<p>The production rates in this calculator are examples so you can see it working. They are not an industry standard and they are not a promise about how fast your crew cleans. The best numbers are your own: time two or three real jobs, divide the square feet by the hours, and type the result into the rate column. Do the same for your payroll burden and overhead using last year&#x27;s actual costs.</p>
+<h2>What the result tells you</h2>
+<ul><li>Break-even cost is what the visit costs you with no profit. Never bid below it.</li><li>Price per visit is the break-even cost plus your margin, rounded to the nearest $5.</li><li>Price per sq ft is an output, not an input. Use it to sanity-check your bid against others, not to set it.</li><li>Revenue per labor hour shows whether the account is worth your crew&#x27;s time.</li></ul>
+<h2>Questions</h2>
+<h3>Is this calculator free?</h3><p>Yes. It runs in your browser, there is no sign-up, and the numbers you enter are not sent anywhere.</p><h3>How many visits per year should I enter?</h3><p>Five visits a week is about 260 a year, three is about 156, and once a week is 52. Enter 1 for a one-time job.</p><h3>Does it include floor care or carpet cleaning?</h3><p>No. This page prices recurring cleaning visits. Periodic services are usually quoted separately; the paid Excel workbook has a section for them.</p><h3>Can the price be guaranteed to win the bid?</h3><p>No. The calculator shows what the job costs you and what price gives you the margin you asked for. Whether that price wins depends on your market and your competitors.</p>
+</div>
+</div></main>
+<script type="application/json" id="calc-config">{"rate_mode": "units_per_hour", "qty_label": "Sq ft", "rate_label": "Sq ft per hour", "item_types": [["General office", 3000], ["Restrooms", 400], ["Break room / kitchenette", 800], ["Lobby / reception", 2000], ["Hallways / corridors", 5000], ["Conference rooms", 2500], ["Stairwells", 1500], ["Medical / exam rooms", 800], ["Retail sales floor", 4000], ["Warehouse / light sweep", 8000]], "difficulty": [["Standard", 1.0], ["Heavy traffic", 1.2], ["Initial deep clean", 1.5]], "example_lines": [[0, 6000, 0], [0, 2500, 0], [1, 600, 0], [2, 400, 0], [3, 800, 0], [4, 1200, 0], [5, 500, 0]]}</script>
+<script src="../app.js"></script>
+<footer><div class="wrap">
+<p>Free calculators for small service businesses. The default numbers are examples, not industry standards, and nothing here is accounting, tax or legal advice.</p>
+<p>Full Excel versions are sold at <a href="https://atanesian.gumroad.com">atanesian.gumroad.com</a>. These tools were built with the help of AI.</p>
+</div></footer>
+</body>
+</html>
